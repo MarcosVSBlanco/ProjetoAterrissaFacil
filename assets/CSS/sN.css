@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* offcanvas */
+
+:root {
+    --offcanvas-horizontal-width: 300px;
+}
+
+#offcanvasRight {
+    width: var(--offcanvas-horizontal-width);
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --offcanvas-horizontal-width: 150px;
+    }
+
+    #offcanvasRight {
+        width: var(--offcanvas-horizontal-width);
+    }
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* cabeçalho */
+
+/* Navbar */
+
+.navbar-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001A24;
+}
+
+.logo-nav {
+    height: 120px;
+    width: auto;
+}
+
+.itens-navbar {
+    display: inline-flex;
+    align-items: center;
+    background-color: #001A24;
+    color: #D9D9D9;
+    list-style-type: none;
+}
+
+.itens-navbar li {
+    margin: 0 15px;
+}
+
+.link-nav {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Categorias */
+
+.categorias {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180deg, #00ACEE 100%, #00ACEE 0%);
+    padding: 10px 0;
+}
+
+.opcoesCategorias {
+    background-color: #00ACEE;
+    color: #001A24;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    align-items: center;
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
+}
+
+.secPadding {
+    padding: 10px 150px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:789px) {
+    .secPadding {
+        padding: 10px 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .secPadding {
+        padding: 10px 30px;
+        margin-bottom: 2rem;
+    }
+}
+
+section {
+    padding: 10px 17rem;
+}
+
+/* cor letra branca categorias */
+
+.categorias a {
+    color: white;
+    font-weight: 650;
+}
+
+/* Missão, Visão, Valores */
+
+main>div:last-child>div {
+    text-align: center;
+    grid-template-rows: repeat(3, 0.1fr);
+}
+
+.textovertical {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+/* missão */
+
+.miss {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5px;
+}
+
+/* Visão */
+
+.vis {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    column-gap: 5px;
+}
+
+/* Valores */
+
+.val {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5px;
+}
+
+/* Cor de fundo missão visão valores e classes estilização geral */
+
+.cormain {
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cormain p {
+    font-size: 1.3rem;
+}
+
+@media (max-width:500px) {
+    .cormain p {
+        font-size: 1.0rem;
+    }
+}
+
+.paddin {
+    padding: 10%;
+}
+
+.flxcolumn {
+    flex-direction: column;
+}
+
+.corspan {
+    font-weight: bolder;
+}
+
+.imgIntegrantes {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.section-servicos {
+    background: linear-gradient(270deg, rgb(0, 73, 102) 4.44%, #294B28 100%);
+}
+
+.itens {
+    padding: 40px;
+    background-color: #d9d9d9;
+}
+
+.itens figcaption {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+.img-icon {
+    width: 100px;
+    height: 100px;
+}
+
+/* colaboradores */
+.nome-col {
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+
+/* footer */
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #001a24;
+    color: #ffffff;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: none;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #00ACEE;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: #00ACEE;
+    opacity: 0.75;
+}
+
+.text-titulo {
+    text-align: center;
+    color: #001A24;
+    border-bottom: 1px solid #001A24;
+    font-size: 2.0rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.7rem;
+}
+
+/* redes sociais integrantes */
+
+.redes_sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+.redes_sociais_linkedin {
+    width: 50px;
+    height: 50px;
+}
+
+/* Arredondamento github dos integrantes */
+
+@media (max-width:789px) {
+
+    /*  Alteração Navbar */
+    main>section {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    header>nav>ul:first-child {
+        display: none;
+    }
+
+    .logo-nav {
+        height: 90px;
+        margin-left: 5px;
+        width: auto;
+    }
+
+    .navbar-pages {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        justify-content: end;
+        align-content: top;
+        padding: 10px 0 10px 10px;
+    }
+
+    .itens-navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .itens-navbar li {
+        margin: 0 15px;
+        margin-bottom: 13px;
+    }
+
+    /* Missão, Visão, Valores */
+
+    main {
+        margin: 0px 0px;
+        margin-bottom: -50px;
+        margin-bottom: 20px;
+    }
+
+
+    .textovertical {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        font-weight: bolder;
+        align-items: center;
+        justify-items: center;
+        letter-spacing: 5px;
+        margin-bottom: 1px;
+    }
+
+    /* missão  */
+
+    .miss,
+    .vis,
+    .val {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* troca a ordem da visão */
+    .vis div:last-child {
+        order: -1;
+    }
+
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+@media (max-width:468px) {
+    .text-titulo {
+        font-size: 2.0rem;
+        letter-spacing: 0.4rem;
+    }
+
+    /* Diminuir fotos integrantes */
+    .imgIntegrantes {
+        height: 110px;
+        width: 110px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .logo-nav {
+        height: 80px;
+        width: auto;
+        margin-left: 5px;
+    }
+}
+
+/* Menu fixo */
+
+.menu_fixo {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -165px;
+    width: 100%;
+}
+
+body {
+    padding-top: 165px;
+}
